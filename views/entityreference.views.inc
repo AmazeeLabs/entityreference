@@ -21,9 +21,11 @@ function entityreference_field_views_data($field) {
       $field_name = $field['field_name'] . '_target_id';
       $parameters = array('@entity' => $entity, '!field_name' => $field['field_name']);
       $data[$table_name][$field_name]['relationship'] = array(
-        'handler' => 'views_handler_relationship',
+        'handler' => 'entityreference_handler_relationship',
         'base' => $entity_info['base table'],
         'base field' => $entity_info['entity keys']['id'],
+        'field' => $field_name,
+        'field_name' => $field['field_name'],
         'label' => t('@entity entity referenced from !field_name', $parameters),
         'group' => t('Entity Reference'),
         'title' => t('Referenced Entity'),

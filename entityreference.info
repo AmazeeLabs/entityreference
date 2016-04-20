@@ -13,6 +13,7 @@ files[] = plugins/selection/abstract.inc
 files[] = plugins/selection/views.inc
 files[] = plugins/behavior/abstract.inc
 
+files[] = views/entityreference_handler_relationship.inc
 files[] = views/entityreference_plugin_display.inc
 files[] = views/entityreference_plugin_style.inc
 files[] = views/entityreference_plugin_row_fields.inc
